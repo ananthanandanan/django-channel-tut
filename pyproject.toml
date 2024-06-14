@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "django-channels"
+version = "0.1.0"
+description = ""
+authors = ["ananthanandanan <ananthanandanan@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.0.6"
+django-cors-headers = "^4.3.1"
+channels = { version = "^4.1.0", extras = ["daphne"] }
+redis = "^5.0.6"
+channels-redis = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
